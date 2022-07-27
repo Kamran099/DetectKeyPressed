@@ -16,6 +16,19 @@ body {
     background: #2065d5;
 }
 
+.text,
+.key-code,
+.key-name {
+    font-size: 45px;
+    color: #17A2B8;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 30px;
+    text-align: center;
+}
+
 .box {
     width: 290px;
     padding: 25px;
@@ -31,7 +44,12 @@ body {
     justify-content: center;
 }
 
+.box.active .content {
+    display: flex;
+}
+
 .box .content {
+    display: none;
     flex-direction: column;
 }
 
@@ -41,13 +59,6 @@ body {
     margin-bottom: 15px;
     border-radius: 50%;
     border: 5px solid #17A2B8;
-}
-
-.key-code,
-.key-name {
-    font-size: 45px;
-    color: #17A2B8;
-    font-weight: 500;
 }
 
 .content .details {
